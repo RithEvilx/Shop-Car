@@ -1,0 +1,49 @@
+:root {
+  --light_yellow: #ffee80;
+  --yellow: #f9d806;
+  --black: #130f40;
+  --light_color: #666;
+  --teal: #20c997;
+  --red: #dc3545;
+  --white: #fff;
+  --bs_darkgray: #343a40;
+  --lightsky: rgba(232, 232, 232, 0.653);
+  --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  --border: 0.1rem solid rgba(0, 0, 0, 0.1);
+}
+@font-face {
+  font-family: thin;
+  src: url("../fonts/Poppins-Light.ttf");
+}
+@font-face {
+  font-family: normal;
+  src: url("../fonts/Poppins-Medium.ttf");
+}
+@font-face {
+  font-family: bold;
+  src: url("../fonts/Poppins-Bold.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  font-family: normal;
+  color: var(--black);
+}
+html {
+  scroll-behavior: smooth;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+a {
+  display: block;
+  text-decoration: none;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

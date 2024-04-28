@@ -1,0 +1,62 @@
+/* Menu-Bar */
+.menu-bar {
+  position: fixed;
+  width: 100%;
+  box-shadow: var(--box-shadow);
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+.menu-bar .menu {
+  position: sticky;
+  width: 1140px;
+  display: flex;
+  justify-content: space-between;
+}
+/* Left-Menu */
+.menu .left-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+.menu .left-menu h1 {
+  font-family: bold;
+  font-size: 20px;
+  transition: all 0.5s;
+}
+.menu .left-menu:hover h1 {
+  transform: scale(1.1);
+}
+/* Middle-Menu */
+.menu .middle-menu ul {
+  display: flex;
+}
+.middle-menu ul li a {
+  padding: 20px;
+  box-sizing: border-box;
+  transition: all 0.3s;
+}
+.middle-menu ul li a:hover {
+  color: var(--yellow);
+}
+/* Right-Menu */
+.menu .right-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu .right-menu a {
+  color: var(--white);
+  padding: 5px 20px;
+  border-radius: 30px;
+  font-size: 12px;
+  background-color: var(--red);
+  transition: all 0.3s;
+}
+.menu .right-menu a:hover {
+  background-color: var(--black);
+}

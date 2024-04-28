@@ -1,0 +1,107 @@
+/* Our-Service */
+.our-service {
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* title-box */
+.our-service .title-box {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.our-service .title-box .title {
+  width: 260px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.our-service .title h1 {
+  font-family: thin;
+  font-size: 45px;
+}
+.our-service .title span {
+  position: absolute;
+  bottom: 3px;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: var(--light_yellow);
+  z-index: -1;
+  clip-path: polygon(0 90%, 100% 80%, 100% 100%, 0% 100%);
+}
+/* item-box */
+.our-service .item-box {
+  width: 1140px;
+  height: 85%;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.our-service .item-box .item {
+  width: 24%;
+  height: 300px;
+  border-radius: 5px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: var(--border);
+  box-shadow: var(--box-shadow);
+  transition: all 0.3s;
+}
+.our-service .item-box .item:hover {
+  background-color: var(--black);
+}
+.our-service .item:hover h1,
+.our-service .item:hover p {
+  color: var(--white);
+}
+.our-service .item .icon {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.our-service .icon .icon-cover {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: var(--yellow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+}
+.our-service .item .description {
+  width: 100%;
+  height: 70%;
+  text-align: center;
+}
+.our-service .description h1 {
+  font-family: thin;
+  font-size: 25px;
+}
+.our-service .description p {
+  color: var(--light_color);
+  margin: 20px 0 25px;
+  font-size: 14px;
+}
+.our-service .description a {
+  display: inline-block;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 14px;
+  color: var(--white);
+  background-color: var(--red);
+  transition: all 0.3s;
+}
+.our-service .description a:hover {
+  background-color: #000;
+  border: 2px solid var(--red);
+}

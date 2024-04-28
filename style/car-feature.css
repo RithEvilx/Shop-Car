@@ -1,0 +1,99 @@
+/* Car-Feature */
+.car-feature {
+  width: 1140px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* title-box */
+.car-feature .title-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.car-feature .title-box .title {
+  width: 265px;
+  height: 60px;
+  position: relative;
+}
+.car-feature .title h1 {
+  font-size: 45px;
+  font-family: thin;
+}
+.car-feature .title span {
+  position: absolute;
+  bottom: 9px;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: var(--light_yellow);
+  z-index: -1;
+  clip-path: polygon(0 90%, 100% 80%, 100% 100%, 0% 100%);
+}
+/* item-box */
+.car-feature .item-box {
+  width: 1140px;
+  height: 85%;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.car-feature .item-box .item {
+  width: 24%;
+  height: 300px;
+  border-radius: 5px;
+  padding: 20px;
+  box-sizing: border-box;
+  border: var(--border);
+  box-shadow: var(--box-shadow);
+  transition: all 0.3s;
+  overflow: hidden;
+}
+.car-feature .item-box .item:hover {
+  background-color: var(--light_color);
+}
+.car-feature .item .car-model {
+  width: 100%;
+  height: 50%;
+}
+.car-feature .car-model img {
+  transition: all 0.5s;
+}
+.car-feature .car-model:hover img {
+  transform: scale(1.2);
+}
+.car-feature .item .description {
+  width: 100%;
+  height: 50%;
+  text-align: center;
+}
+.car-feature .description h1 {
+  font-size: 22px;
+  font-family: thin;
+}
+.car-feature .description .star i {
+  color: var(--yellow);
+  margin-top: 10px;
+}
+.car-feature .description p {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+.car-feature .description a {
+  display: inline-block;
+  padding: 5px 30px;
+  border-radius: 20px;
+  font-size: 12px;
+  background-color: var(--red);
+  color: var(--white);
+  transition: all 0.3s;
+}
+.car-feature .description a:hover {
+  border: 2px solid var(--red);
+  background-color: var(--black);
+  transform: scaleY(1.1);
+  transform: scaleX(1.3);
+}
